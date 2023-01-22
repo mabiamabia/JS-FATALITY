@@ -1,4 +1,4 @@
-let idade = 18;
+let idade = 15;
 let paisPresentes = false;
 let comprouBilhete = true;
 const podeViajar = idade >= 18 || (paisPresentes && comprouBilhete);
@@ -12,14 +12,12 @@ console.log(n1, n2, n3);
 console.log(`Media: ${media}`);
 console.log(3 * 2 ** 2);
 
+let msgMaiorIdade = idade >= 18 ? "é maior de idade" : "é menor de 18 anos";
+
 if (!comprouBilhete) {
   console.log("Não comprou o bilhete");
 } else {
-  if (idade >= 18) {
-    console.log("é maior de idade, pode viajar");
-  } else {
-    console.log("é menor de idade");
-  }
+  console.log(msgMaiorIdade);
 }
 
 if (n1 === 0 || n2 === 0) {
