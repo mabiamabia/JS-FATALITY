@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TAbuada</title>
+  </head>
+  <body>
+    <h1>funcoes - tabuada</h1>
+    <button onclick="mostrarTabuada()">mostrar tabuada</button
+    ><button onclick="limparTabuada()">limpar tabuada</button>
+    <div id="output"></div>
+
+    <script>
+      function mostrarTabuada() {
+        let numero = prompt("digite um numero");
+        if (!isNaN(numero)) {
+          let indice = 0;
+          let tabuada = "";
+          while (indice <= 1000) {
+            tabuada += `${indice} x ${numero} = ${indice * numero} <br>`;
+            indice++;
+          }
+          output.innerHTML = tabuada;
+        } else {
+          alert("Por favor, digite um número válido");
+        }
+      }
+      function limparTabuada() {
+        output.innerHTML = "";
+      }
+    </script>
+  </body>
+</html>
