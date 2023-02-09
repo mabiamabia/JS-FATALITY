@@ -13,10 +13,6 @@ const pessoas = [
   },
 ];
 
-let i = 0;
-
-while (i < pessoas.length) {
-  console.table("o nome do funcionario é: " + pessoas[i].nome);
-  console.table("a idade do funcionario é : " + pessoas[i].idade);
-  i++;
+for (let i = 0; i < pessoas.length; i++) {
+  console.log(`${pessoas[i].nome} possui ${pessoas[i].idade} anos`);
 }
