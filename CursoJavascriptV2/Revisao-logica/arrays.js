@@ -1,0 +1,11 @@
+const arr = new Array(1, 2, 3, 4, 7);
+console.log(arr);
+const arr2 = new Array(true, "Janaina", 29, new Array(2, 4, 10));
+console.log(arr2);
+arr[0] = "laura";
+arr[1] = 40;
+console.log(arr);
+console.log(arr2[3][arr2[3].length - 1]);
+const arr3 = ["Pedro", 40, [3, 6, 9], true];
+arr3.push("a", "b", "c");
+console.log(arr3);
