@@ -1,5 +1,14 @@
-"use strict";
+// function Teste() {
+//   "use strict";
+//   console.log(this);
+//   this.a = "a";
+// }
 
-let x = 10;
+// Teste();
 
-console.log(x);
+// let msg = "Uma string";
+
+// msg.count = 0;
+
+// console.log(msg);
+
